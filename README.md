@@ -92,4 +92,4 @@ The Flask application source code is available in:
 application/app.py
 
 ## Installation steps document also added detailly
-setup.docx
+docx/installation-guide.docx
