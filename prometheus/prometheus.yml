@@ -1,0 +1,18 @@
+# vi prometheus/prometheus.yml
+
+
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'application-server'
+    static_configs:
+      - targets: ['<APPLICATION_SERVER_PRIVATE_IP>:9100']
+
+      
+# Change your Application server IP: For example, if your Application EC2 private IP is: 172.31.18.249. Change ['172.31.18.249:9100']
